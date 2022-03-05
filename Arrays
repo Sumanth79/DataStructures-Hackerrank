@@ -10,4 +10,18 @@ def reverse():
   
 reverse()
 
-# 2) 
+# 2) 2D Array 
+def hour_glass():
+  arr = []
+  for i in range(6):
+    arr.append(list(map(int,input().split())))
+  arr1 = arr
+  arr2 = []
+  for i in range(0,len(arr)-2): 
+     for j in range(0,len(arr)-2): 
+         sum = arr1[i][j]+arr1[i][j+1]+arr1[i][j+2]+arr1[i+1][j+1]+arr1[i+2][j]+arr1[i+2][j+1]+arr1[i+2][j+2]
+         arr2.append(sum)
+ 
+  print(max(arr2))
+hour_glass()
+
