@@ -25,3 +25,5 @@ def hour_glass():
   print(max(arr2))
 hour_glass()
 
+# 3) Dynamic Array 
+
