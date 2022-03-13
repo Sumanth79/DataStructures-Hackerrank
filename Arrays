@@ -26,4 +26,24 @@ def hour_glass():
 hour_glass()
 
 # 3) Dynamic Array 
+def sparse_arrays(): 
+  size_of_strings = int(input()) 
+  arr_of_strings = [] 
+  result = []
+  for i in range(size_of_strings): 
+    inp1 = str(input())
+    arr_of_strings.append(inp1) 
+  size_of_queries = int(input())
+  for j in range(size_of_queries): 
+    inp2 = str(input())  
+    count = 0
+    for k in arr_of_strings:
+      if k == inp2 :
+        count += 1
+    result.append(count) 
+  for i in result:
+    print(i)
+  
+sparse_arrays()
 
+#4)
